@@ -3,22 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Memorii Events | Photo Booth Entertainment in Toronto and the GTA</title>
-  <meta name="description" content="Memorii Events brings photo booth entertainment, printed keepsakes and digital photo sharing to weddings, private parties and events in Toronto and the GTA.">
+  <title>Memorii Events | Photo Booth for Weddings and Events in Toronto and the GTA</title>
+  <meta name="description" content="Photo booth entertainment for weddings, private parties and events across Toronto and the GTA. Printed keepsakes, digital sharing and something fun for your guests to do.">
   <link rel="canonical" href="https://memoriievents.ca/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Memorii Events">
-  <meta property="og:description" content="Events fade. Memoriis don't.">
-  <meta property="og:url" content="https://memoriievents.ca/">
-  <meta property="og:image" content="https://memoriievents.ca/assets/brand/business-card.jpg">
   <meta name="theme-color" content="#191a1a">
-  <link rel="icon" href="assets/logo-web.png">
+
+  <!-- Social sharing previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Memorii Events">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Memorii Events | Photo Booth for Weddings and Events in Toronto and the GTA">
+  <meta property="og:description" content="Photo booth entertainment for weddings, private parties and events across Toronto and the GTA. Printed keepsakes, digital sharing and something fun for your guests to do.">
+  <meta property="og:url" content="https://memoriievents.ca/">
+  <meta property="og:image" content="https://memoriievents.ca/assets/media-web/wedding1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css?v=2">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Memorii Events","url":"https://memoriievents.ca/","email":"memoriieventsbooking@gmail.com","description":"Photo booth entertainment, onsite printing and digital photo sharing for weddings, private parties and events.","areaServed":"Toronto and the GTA"}
+  {"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Memorii Events", "url": "https://memoriievents.ca/", "email": "memoriieventsbooking@gmail.com", "logo": "https://memoriievents.ca/assets/logo-transparent.png", "image": "https://memoriievents.ca/assets/media-web/wedding1.jpg", "slogan": "Events fade. Memoriis don't.", "description": "Photo booth entertainment, onsite printing and digital photo sharing for weddings, private parties and events.", "areaServed": ["Toronto", "Greater Toronto Area"]}
   </script>
 </head>
 <body>
@@ -26,76 +34,134 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="Memorii Events home">
-      <img src="assets/logo-web.png" alt="Memorii Events logo" width="44" height="44">
-      <span>Memorii Events</span>
+    <a class="brand" href="index.html" aria-label="Memorii Events, home">
+      <img src="assets/logo-transparent-256.png" alt="" width="44" height="44">
+      <span class="brand-name"><strong>Memorii</strong> <span>Events</span></span>
     </a>
+
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      <span></span><span></span><span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path class="line line-top" d="M4 7h16"/><path class="line line-mid" d="M4 12h16"/><path class="line line-bot" d="M4 17h16"/>
+      </svg>
     </button>
+
     <nav id="site-nav" class="site-nav" aria-label="Main">
-      <a href="pages/book.html">Book your Event</a>
-      <a href="pages/services.html">Services</a>
-      <a href="pages/quote.html">Get a Quote</a>
-      <a href="#meet-the-team">About Us</a>
+      <a class="nav-link" href="index.html" aria-current="page">Home</a>
+      <a class="nav-link" href="pages/book.html">Book your Event</a>
+      <a class="nav-link" href="pages/services.html">Services</a>
+      <a class="nav-link" href="pages/quote.html">Get a Quote</a>
+      <a class="nav-link" href="index.html#meet-the-team">About Us</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
+  <h1 class="visually-hidden">Memorii Events: photo booth entertainment for weddings and events in Toronto and the GTA</h1>
+
+  <!-- Hero carousel: photos and videos come from assets/data/carousel.json -->
   <section class="hero" aria-label="Photos and videos from our events">
     <div class="container">
-      <div class="carousel-stage" role="region" aria-roledescription="carousel" aria-label="Photos and videos from our events">
-        <span class="carousel-count" aria-live="polite"></span>
-        <button class="carousel-btn prev" type="button" aria-label="Previous photo or video">&#8249;</button>
-        <button class="carousel-btn next" type="button" aria-label="Next photo or video">&#8250;</button>
+      <div class="cf" data-carousel data-src="assets/data/carousel.json" tabindex="0"
+           role="region" aria-roledescription="carousel"
+           aria-label="Photos and videos from our events. Use the left and right arrow keys to browse.">
+        <div class="cf-track"></div>
+
+        <button class="cf-btn cf-prev" type="button" aria-label="Previous photo or video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+        <button class="cf-btn cf-next" type="button" aria-label="Next photo or video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+
+        <div class="cf-bar">
+          <span class="cf-count" aria-hidden="true"></span>
+          <button class="cf-pause" type="button" aria-label="Pause slideshow" aria-pressed="false">
+            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 7 5.5z"/></svg>
+          </button>
+        </div>
+        <p class="cf-status visually-hidden" aria-live="polite"></p>
       </div>
     </div>
+
     <div class="hero-cta">
       <a class="btn btn-lg" href="pages/book.html">Book your Event</a>
     </div>
   </section>
 
-  <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+  <!-- Reviews: every review in assets/data/reviews.json is shown -->
+  <section class="reviews" aria-labelledby="reviews-title">
     <div class="container">
-      <h2 class="section-title" id="reviews-title">See what people think</h2>
-      <div class="reviews-wrap">
-        <button class="rev-btn" type="button" data-reviews-prev aria-label="Previous reviews">&#8249;</button>
-        <div class="reviews-track" data-reviews tabindex="0" aria-label="Customer reviews"></div>
-        <button class="rev-btn" type="button" data-reviews-next aria-label="Next reviews">&#8250;</button>
+      <div class="section-head">
+        <h2 class="section-title" id="reviews-title">See what people think</h2>
+        <div class="review-arrows">
+          <button class="round-btn" type="button" data-reviews-prev aria-label="Previous review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+          <button class="round-btn" type="button" data-reviews-next aria-label="Next review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
       </div>
+      <div class="reviews-track" data-reviews data-src="assets/data/reviews.json" tabindex="0" aria-label="Customer reviews"></div>
     </div>
   </section>
 
-  <section class="about" id="meet-the-team" aria-labelledby="team-title">
-    <div class="container about-grid">
+  <!-- Meet the Team -->
+  <section class="team" id="meet-the-team" aria-labelledby="team-title">
+    <div class="container team-grid">
       <div class="team-photo">
-        <img src="assets/images/team.jpg" alt="The Memorii Events team" width="800" height="1000"
-             onload="this.nextElementSibling.hidden=true" onerror="this.remove()">
-        <span class="team-placeholder">Team photo coming soon</span>
+        <!-- Add the team photo at assets/images/team.jpg. Until then the placeholder below shows. -->
+        <img src="assets/images/team.jpg" alt="The Memorii Events team" width="1000" height="800" loading="lazy"
+             onload="this.nextElementSibling.hidden = true" onerror="this.remove()">
+        <div class="team-placeholder">
+          <img src="assets/logo-transparent-256.png" alt="" width="72" height="72">
+          <span>Team photo coming soon</span>
+        </div>
       </div>
-      <div class="about-copy">
+
+      <div class="team-copy">
         <h2 id="team-title">Meet the Team</h2>
-        <!-- TODO: replace this filler text with the real About Us blurb -->
-        <p>Memorii Events brings photo booth entertainment to weddings, private parties and events across Toronto and the GTA. Our guests get something to do, a photo to take home, and a keepsake that lasts long after the night is over.</p>
-        <p>This is placeholder text. The real team story is coming soon.</p>
-        <p><a class="btn" href="pages/book.html">Book your Event</a></p>
+        <!-- TODO: replace this filler copy with the real Meet the Team blurb -->
+        <p>Memorii Events brings photo booth entertainment, printed keepsakes and digital sharing to weddings, private parties and events across Toronto and the GTA.</p>
+        <p>Your guests get something to do on the night and a photo to take home. Our full story is coming soon.</p>
+        <div class="team-actions">
+          <a class="btn" href="pages/book.html">Book your Event</a>
+          <a class="btn btn-ghost" href="pages/quote.html">Get a Quote</a>
+        </div>
       </div>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; 2026 Memorii Events. Events fade. Memoriis don't.</p>
-    <ul class="footer-links">
-      <li><a href="mailto:memoriieventsbooking@gmail.com">memoriieventsbooking@gmail.com</a></li>
-      <li><a href="pages/privacy.html">Privacy Policy</a></li>
-    </ul>
-    <p>Instagram @memorii.events &middot; TikTok @memoriievents &middot; Facebook Memorii Events</p>
+  <div class="container">
+    <p class="slogan" aria-label="Events fade. Memoriis don't.">
+      <span class="slogan-fade" aria-hidden="true">Events fade.</span>
+      <span class="slogan-bold" aria-hidden="true">Memoriis don&rsquo;t.</span>
+    </p>
+
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-transparent-256.png" alt="" width="36" height="36">
+        <span class="brand-name"><strong>Memorii</strong> <span>Events</span></span>
+      </div>
+      <div>
+        <h2 class="footer-h">Contact</h2>
+        <ul class="footer-list">
+          <li><a href="mailto:memoriieventsbooking@gmail.com">memoriieventsbooking@gmail.com</a></li>
+          <li><a href="pages/book.html">Book your Event</a></li>
+          <li><a href="pages/quote.html">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-h">Follow us</h2>
+        <ul class="footer-list">
+          <li><span class="label">Instagram</span>@memorii.events</li>
+          <li><span class="label">TikTok</span>@memoriievents</li>
+          <li><span class="label">Facebook</span>Memorii Events</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <p>&copy; 2026 Memorii Events. <a href="pages/privacy.html">Privacy Policy</a></p>
+    </div>
   </div>
 </footer>
 
-<script src="assets/js/main.js" defer></script>
+<script src="assets/js/main.js?v=2" defer></script>
 </body>
 </html>

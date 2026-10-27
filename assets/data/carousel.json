@@ -2,196 +2,281 @@
   {
     "type": "image",
     "src": "assets/media-web/wedding1.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth"
+    "alt": "Group of people at a wedding having fun using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding2.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth"
+    "alt": "Group of people at a wedding posing together in a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding3.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth"
+    "alt": "Group of guests at a wedding having a great time using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding4.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth"
+    "alt": "Group of people at a wedding laughing while using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "video",
     "src": "assets/media/vid1.mp4",
-    "alt": "Group of people interacting with a photobooth at a wedding"
+    "alt": "Group of people interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid1-poster.jpg",
+    "width": 1080,
+    "height": 782
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding5.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth"
+    "alt": "Group of people at a wedding having fun using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding6.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth"
+    "alt": "Group of people at a wedding posing together in a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding7.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth"
+    "alt": "Group of guests at a wedding having a great time using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding8.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth"
+    "alt": "Group of people at a wedding laughing while using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "video",
     "src": "assets/media/vid2.mp4",
-    "alt": "Group of guests interacting with a photobooth at a wedding"
+    "alt": "Group of guests interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid2-poster.jpg",
+    "width": 1080,
+    "height": 1920
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding9.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth"
+    "alt": "Group of people at a wedding having fun using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding10.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth"
+    "alt": "Group of people at a wedding posing together in a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding11.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth"
+    "alt": "Group of guests at a wedding having a great time using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding12.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth"
+    "alt": "Group of people at a wedding laughing while using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "video",
     "src": "assets/media/vid3.mp4",
-    "alt": "Group of people interacting with a photobooth at a wedding"
+    "alt": "Group of people interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid3-poster.jpg",
+    "width": 1080,
+    "height": 1920
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding13.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth"
+    "alt": "Group of people at a wedding having fun using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding14.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth"
+    "alt": "Group of people at a wedding posing together in a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding15.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth"
+    "alt": "Group of guests at a wedding having a great time using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding16.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth"
+    "alt": "Group of people at a wedding laughing while using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "video",
     "src": "assets/media/vid4.mp4",
-    "alt": "Group of guests interacting with a photobooth at a wedding"
+    "alt": "Group of guests interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid4-poster.jpg",
+    "width": 1080,
+    "height": 1920
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding17.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth"
+    "alt": "Group of people at a wedding having fun using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding18.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth"
+    "alt": "Group of people at a wedding posing together in a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding19.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth"
+    "alt": "Group of guests at a wedding having a great time using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding20.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth"
+    "alt": "Group of people at a wedding laughing while using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "video",
     "src": "assets/media/vid5.mp4",
-    "alt": "Group of people interacting with a photobooth at a wedding"
+    "alt": "Group of people interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid5-poster.jpg",
+    "width": 1080,
+    "height": 1920
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding21.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth"
+    "alt": "Group of people at a wedding having fun using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding22.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth"
+    "alt": "Group of people at a wedding posing together in a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding23.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth"
+    "alt": "Group of guests at a wedding having a great time using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding24.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth"
+    "alt": "Group of people at a wedding laughing while using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "video",
     "src": "assets/media/vid6.mp4",
-    "alt": "Group of guests interacting with a photobooth at a wedding"
+    "alt": "Group of guests interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid6-poster.jpg",
+    "width": 1080,
+    "height": 1920
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding25.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth"
+    "alt": "Group of people at a wedding having fun using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding26.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth"
+    "alt": "Group of people at a wedding posing together in a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding27.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth"
+    "alt": "Group of guests at a wedding having a great time using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding28.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth"
+    "alt": "Group of people at a wedding laughing while using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "video",
     "src": "assets/media/vid7.mp4",
-    "alt": "Group of people interacting with a photobooth at a wedding"
+    "alt": "Group of people interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid7-poster.jpg",
+    "width": 1080,
+    "height": 1920
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding29.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth"
+    "alt": "Group of people at a wedding having fun using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding30.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth"
+    "alt": "Group of people at a wedding posing together in a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding31.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth"
+    "alt": "Group of guests at a wedding having a great time using a photobooth",
+    "width": 1600,
+    "height": 1067
   },
   {
     "type": "image",
     "src": "assets/media-web/wedding32.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth"
+    "alt": "Group of people at a wedding laughing while using a photobooth",
+    "width": 1600,
+    "height": 1067
   }
 ]

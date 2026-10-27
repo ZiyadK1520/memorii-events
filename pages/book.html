@@ -4,90 +4,165 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Book your Event | Memorii Events</title>
-  <meta name="description" content="Tell us about your event and we will get back to you with availability and pricing.">
+  <meta name="description" content="Tell us about your event. We’ll reach out with availability and pricing.">
   <link rel="canonical" href="https://memoriievents.ca/pages/book.html">
   <meta name="theme-color" content="#191a1a">
-  <link rel="icon" href="../assets/logo-web.png">
+
+  <!-- Social sharing previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Memorii Events">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Book your Event | Memorii Events">
+  <meta property="og:description" content="Tell us about your event. We’ll reach out with availability and pricing.">
+  <meta property="og:url" content="https://memoriievents.ca/pages/book.html">
+  <meta property="og:image" content="https://memoriievents.ca/assets/media-web/wedding1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=2">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="../index.html" aria-label="Memorii Events home">
-      <img src="../assets/logo-web.png" alt="Memorii Events logo" width="44" height="44">
-      <span>Memorii Events</span>
+    <a class="brand" href="../index.html" aria-label="Memorii Events, home">
+      <img src="../assets/logo-transparent-256.png" alt="" width="44" height="44">
+      <span class="brand-name"><strong>Memorii</strong> <span>Events</span></span>
     </a>
+
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      <span></span><span></span><span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path class="line line-top" d="M4 7h16"/><path class="line line-mid" d="M4 12h16"/><path class="line line-bot" d="M4 17h16"/>
+      </svg>
     </button>
+
     <nav id="site-nav" class="site-nav" aria-label="Main">
-      <a href="book.html" aria-current="page">Book your Event</a>
-      <a href="services.html">Services</a>
-      <a href="quote.html">Get a Quote</a>
-      <a href="../index.html#meet-the-team">About Us</a>
+      <a class="nav-link" href="../index.html">Home</a>
+      <a class="nav-link" href="book.html" aria-current="page">Book your Event</a>
+      <a class="nav-link" href="services.html">Services</a>
+      <a class="nav-link" href="quote.html">Get a Quote</a>
+      <a class="nav-link" href="../index.html#meet-the-team">About Us</a>
     </nav>
   </div>
 </header>
-<main id="main" class="page">
-  <div class="container page-narrow">
-    <h1>Book your Event</h1>
-    <p class="lead">Tell us about your event and we will get back to you with availability and pricing.</p>
-    <div class="form-card">
-      <p class="required-note">Fields marked * are required.</p>
-      <form class="enquiry-form" action="https://formspree.io/f/mgaaaqll" method="POST">
-        <input type="hidden" name="_subject" value="New booking request - Memorii Events">
-        <input type="hidden" name="_next" value="https://memoriievents.ca/pages/thanks.html">
-        <p class="visually-hidden"><label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
 
-        <div class="field">
-          <label for="name">Full name *</label>
-          <input id="name" name="name" type="text" required autocomplete="name">
-        </div>
-        <div class="field">
-          <label for="contact">Phone number or email *</label>
-          <input id="contact" name="contact" type="text" required>
-        </div>
-        <div class="field">
-          <label for="event_type">Type of event *</label>
-          <select id="event_type" name="event_type" required>
-            <option value="">Choose one</option>
-            <option>Wedding</option>
-            <option>Private party</option>
-            <option>Corporate event</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="event_date">Event date *</label>
-          <input id="event_date" name="event_date" type="date" required>
-        </div>
-        <div class="field">
-          <label for="budget">Budget *</label>
-          <input id="budget" name="budget" type="text" required>
-          <span class="hint">A rough number is fine, or write "not sure yet".</span>
-        </div>
-        <div class="field">
-          <label for="details">Extra details (optional)</label>
-          <textarea id="details" name="details" rows="5"></textarea>
-        </div>
-        <button class="btn" type="submit">Send request</button>
-      </form>
+<main id="main" class="page">
+  <div class="container">
+    <div class="page-head">
+      <h1>Book your Event</h1>
+      <p class="lead">Tell us about your event. We’ll reach out with availability and pricing.</p>
+    </div>
+
+    <div class="form-layout">
+      <div class="form-card">
+        <form class="enquiry-form" action="https://formspree.io/f/mgaaaqll" method="POST">
+          <!-- Formspree settings -->
+          <input type="hidden" name="_subject" value="New booking request - Memorii Events">
+          <input type="hidden" name="_next" value="https://ziyadk1520.github.io/memorii-events/pages/thanks.html">
+          <!-- Spam trap: people never see or fill this -->
+          <div class="visually-hidden" aria-hidden="true">
+            <label for="book-gotcha">Leave this empty</label>
+            <input id="book-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full name <span class="req">(required)</span></label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="contact">Phone number or email <span class="req">(required)</span></label>
+              <input id="contact" name="contact" type="text" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="event_type">Type of event <span class="req">(required)</span></label>
+              <select id="event_type" name="event_type" required>
+                <option value="">Choose one</option>
+                <option>Wedding</option>
+                <option>Private party</option>
+                <option>Corporate event</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="event_date">Event date <span class="req">(required)</span></label>
+              <input id="event_date" name="event_date" type="date" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="budget">Budget <span class="req">(required)</span></label>
+            <input id="budget" name="budget" type="text" required aria-describedby="budget-hint">
+            <span class="hint" id="budget-hint">A rough number is fine. You can also write &ldquo;not sure yet&rdquo;.</span>
+          </div>
+
+          <div class="field">
+            <label for="details">Extra details <span class="req">(optional)</span></label>
+            <textarea id="details" name="details" rows="5" aria-describedby="details-hint"></textarea>
+            <span class="hint" id="details-hint">Venue, guest count, start time, or anything else we should know.</span>
+          </div>
+
+          <div class="form-foot">
+            <p class="form-note">By sending this form you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+            <button class="btn btn-lg" type="submit" data-label="Send booking request">Send booking request</button>
+          </div>
+        </form>
+      </div>
+
+      <aside class="aside-card" aria-labelledby="book-next">
+        <h2 id="book-next">What happens next</h2>
+        <p>We read every request and reach out by phone or email with pricing.</p>
+        <p>Questions first? Email <a href="mailto:memoriieventsbooking@gmail.com">memoriieventsbooking@gmail.com</a>.</p>
+      </aside>
     </div>
   </div>
 </main>
+
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; 2026 Memorii Events. Events fade. Memoriis don't.</p>
-    <ul class="footer-links">
-      <li><a href="mailto:memoriieventsbooking@gmail.com">memoriieventsbooking@gmail.com</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-    </ul>
+  <div class="container">
+    <p class="slogan" aria-label="Events fade. Memoriis don't.">
+      <span class="slogan-fade" aria-hidden="true">Events fade.</span>
+      <span class="slogan-bold" aria-hidden="true">Memoriis don&rsquo;t.</span>
+    </p>
+
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../assets/logo-transparent-256.png" alt="" width="36" height="36">
+        <span class="brand-name"><strong>Memorii</strong> <span>Events</span></span>
+      </div>
+      <div>
+        <h2 class="footer-h">Contact</h2>
+        <ul class="footer-list">
+          <li><a href="mailto:memoriieventsbooking@gmail.com">memoriieventsbooking@gmail.com</a></li>
+          <li><a href="book.html">Book your Event</a></li>
+          <li><a href="quote.html">Get a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-h">Follow us</h2>
+        <ul class="footer-list">
+          <li><span class="label">Instagram</span>@memorii.events</li>
+          <li><span class="label">TikTok</span>@memoriievents</li>
+          <li><span class="label">Facebook</span>Memorii Events</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <p>&copy; 2026 Memorii Events. <a href="privacy.html">Privacy Policy</a></p>
+    </div>
   </div>
 </footer>
-<script src="../assets/js/main.js" defer></script>
+
+<script src="../assets/js/main.js?v=2" defer></script>
 </body>
 </html>
