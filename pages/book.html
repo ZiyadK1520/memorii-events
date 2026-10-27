@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book your Event | Memorii Events</title>
+  <meta name="description" content="Tell us about your event and we will get back to you with availability and pricing.">
+  <link rel="canonical" href="https://memoriievents.ca/pages/book.html">
+  <meta name="theme-color" content="#191a1a">
+  <link rel="icon" href="../assets/logo-web.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="Memorii Events home">
+      <img src="../assets/logo-web.png" alt="Memorii Events logo" width="44" height="44">
+      <span>Memorii Events</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <a href="book.html" aria-current="page">Book your Event</a>
+      <a href="services.html">Services</a>
+      <a href="quote.html">Get a Quote</a>
+      <a href="../index.html#meet-the-team">About Us</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="page">
+  <div class="container page-narrow">
+    <h1>Book your Event</h1>
+    <p class="lead">Tell us about your event and we will get back to you with availability and pricing.</p>
+    <div class="form-card">
+      <p class="required-note">Fields marked * are required.</p>
+      <form class="enquiry-form" action="https://formspree.io/f/mgaaaqll" method="POST">
+        <input type="hidden" name="_subject" value="New booking request - Memorii Events">
+        <input type="hidden" name="_next" value="https://memoriievents.ca/pages/thanks.html">
+        <p class="visually-hidden"><label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+
+        <div class="field">
+          <label for="name">Full name *</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="contact">Phone number or email *</label>
+          <input id="contact" name="contact" type="text" required>
+        </div>
+        <div class="field">
+          <label for="event_type">Type of event *</label>
+          <select id="event_type" name="event_type" required>
+            <option value="">Choose one</option>
+            <option>Wedding</option>
+            <option>Private party</option>
+            <option>Corporate event</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="event_date">Event date *</label>
+          <input id="event_date" name="event_date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="budget">Budget *</label>
+          <input id="budget" name="budget" type="text" required>
+          <span class="hint">A rough number is fine, or write "not sure yet".</span>
+        </div>
+        <div class="field">
+          <label for="details">Extra details (optional)</label>
+          <textarea id="details" name="details" rows="5"></textarea>
+        </div>
+        <button class="btn" type="submit">Send request</button>
+      </form>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 Memorii Events. Events fade. Memoriis don't.</p>
+    <ul class="footer-links">
+      <li><a href="mailto:memoriieventsbooking@gmail.com">memoriieventsbooking@gmail.com</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

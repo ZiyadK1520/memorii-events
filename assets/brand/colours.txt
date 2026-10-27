@@ -1,0 +1,6 @@
+#191a1a - black background
+#314256 - Dark gray blue (background colour)
+#9d0a5b - Magenta
+#ffffff - white
+#cfcfcf - light gray
+#5b002e - Dark magenta
