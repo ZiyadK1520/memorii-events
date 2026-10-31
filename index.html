@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Memorii Events | Photo Booth for Weddings and Events in Toronto and the GTA</title>
-  <meta name="description" content="Photo booth entertainment for weddings, private parties and events across Toronto and the GTA. Printed keepsakes, digital sharing and something fun for your guests to do.">
+  <meta name="description" content="Photo booth rentals for weddings, parties, corporate and school events across Toronto and the GTA. Printed keepsakes, instant sharing, and something fun for your guests to do.">
   <link rel="canonical" href="https://memoriievents.ca/">
   <meta name="theme-color" content="#191a1a">
 
@@ -13,7 +13,7 @@
   <meta property="og:site_name" content="Memorii Events">
   <meta property="og:locale" content="en_CA">
   <meta property="og:title" content="Memorii Events | Photo Booth for Weddings and Events in Toronto and the GTA">
-  <meta property="og:description" content="Photo booth entertainment for weddings, private parties and events across Toronto and the GTA. Printed keepsakes, digital sharing and something fun for your guests to do.">
+  <meta property="og:description" content="Photo booth rentals for weddings, parties, corporate and school events across Toronto and the GTA. Printed keepsakes, instant sharing, and something fun for your guests to do.">
   <meta property="og:url" content="https://memoriievents.ca/">
   <meta property="og:image" content="https://memoriievents.ca/assets/media-web/wedding1.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -24,9 +24,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/css/styles.css?v=2">
+  <link rel="stylesheet" href="assets/css/styles.css?v=3">
   <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Memorii Events", "url": "https://memoriievents.ca/", "email": "memoriieventsbooking@gmail.com", "logo": "https://memoriievents.ca/assets/logo-transparent.png", "image": "https://memoriievents.ca/assets/media-web/wedding1.jpg", "slogan": "Events fade. Memoriis don't.", "description": "Photo booth entertainment, onsite printing and digital photo sharing for weddings, private parties and events.", "areaServed": ["Toronto", "Greater Toronto Area"]}
+  {"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Memorii Events", "url": "https://memoriievents.ca/", "email": "memoriieventsbooking@gmail.com", "logo": "https://memoriievents.ca/assets/logo-transparent.png", "image": "https://memoriievents.ca/assets/media-web/wedding1.jpg", "slogan": "Events fade. Memoriis don't.", "description": "Photo booth entertainment, onsite printing and digital photo sharing for weddings, parties, corporate and school events.", "areaServed": ["Toronto", "Greater Toronto Area"], "sameAs": ["https://www.instagram.com/memorii.events", "https://www.tiktok.com/@memoriievents"]}
   </script>
 </head>
 <body>
@@ -50,13 +50,13 @@
       <a class="nav-link" href="pages/book.html">Book your Event</a>
       <a class="nav-link" href="pages/services.html">Services</a>
       <a class="nav-link" href="pages/quote.html">Get a Quote</a>
-      <a class="nav-link" href="index.html#meet-the-team">About Us</a>
+      <a class="nav-link" href="#faq">FAQ</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
-  <h1 class="visually-hidden">Memorii Events: photo booth entertainment for weddings and events in Toronto and the GTA</h1>
+  <h1 class="visually-hidden">Memorii Events: photo booth rentals for weddings, parties, corporate and school events in Toronto and the GTA</h1>
 
   <!-- Hero carousel: photos and videos come from assets/data/carousel.json -->
   <section class="hero" aria-label="Photos and videos from our events">
@@ -81,7 +81,60 @@
     </div>
 
     <div class="hero-cta">
-      <a class="btn btn-lg" href="pages/book.html">Book your Event</a>
+      <a class="btn btn-lg" href="pages/book.html">Start making Memoriis</a>
+    </div>
+  </section>
+
+  <!-- Events We Serve: each card opens the booking popup below -->
+  <section class="events" aria-labelledby="events-title">
+    <div class="container">
+      <h2 class="section-title" id="events-title">Events We Serve</h2>
+      <ul class="event-grid" role="list">
+        <li class="event-card">
+          <!-- TODO: swap this colour block for an event photo -->
+          <div class="event-block event-block--slate" aria-hidden="true"></div>
+          <div class="event-body">
+            <h3>Corporate Events</h3>
+            <p>Professional gatherings, team celebrations, and memorable brand experiences.</p>
+            <button class="event-open" type="button" data-event="Corporate Events">
+              Book your booth<span class="visually-hidden"> for Corporate Events</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </li>
+        <li class="event-card">
+          <!-- TODO: swap this colour block for an event photo -->
+          <div class="event-block event-block--magenta" aria-hidden="true"></div>
+          <div class="event-body">
+            <h3>Parties</h3>
+            <p>Birthdays, milestones, and unforgettable celebrations.</p>
+            <button class="event-open" type="button" data-event="Parties">
+              Book your booth<span class="visually-hidden"> for Parties</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </li>
+        <li class="event-card">
+          <!-- TODO: swap this colour block for an event photo -->
+          <div class="event-block event-block--deep" aria-hidden="true"></div>
+          <div class="event-body">
+            <h3>Weddings</h3>
+            <p>Timeless moments, heartfelt celebrations, and lasting memories.</p>
+            <button class="event-open" type="button" data-event="Weddings">
+              Book your booth<span class="visually-hidden"> for Weddings</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </li>
+        <li class="event-card">
+          <!-- TODO: swap this colour block for an event photo -->
+          <div class="event-block event-block--mix" aria-hidden="true"></div>
+          <div class="event-body">
+            <h3>School Events</h3>
+            <p>Graduations, proms, and unforgettable school memories.</p>
+            <button class="event-open" type="button" data-event="School Events">
+              Book your booth<span class="visually-hidden"> for School Events</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -89,7 +142,13 @@
   <section class="reviews" aria-labelledby="reviews-title">
     <div class="container">
       <div class="section-head">
-        <h2 class="section-title" id="reviews-title">See what people think</h2>
+        <div>
+          <h2 class="section-title" id="reviews-title">See what people think</h2>
+          <p class="rating-line">
+            <span class="rating-stars" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></svg></span>
+            <span>5.0 stars on Google</span>
+          </p>
+        </div>
         <div class="review-arrows">
           <button class="round-btn" type="button" data-reviews-prev aria-label="Previous review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
           <button class="round-btn" type="button" data-reviews-next aria-label="Next review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
@@ -99,32 +158,101 @@
     </div>
   </section>
 
-  <!-- Meet the Team -->
-  <section class="team" id="meet-the-team" aria-labelledby="team-title">
-    <div class="container team-grid">
-      <div class="team-photo">
-        <!-- Add the team photo at assets/images/team.jpg. Until then the placeholder below shows. -->
-        <img src="assets/images/team.jpg" alt="The Memorii Events team" width="1000" height="800" loading="lazy"
-             onload="this.nextElementSibling.hidden = true" onerror="this.remove()">
-        <div class="team-placeholder">
-          <img src="assets/logo-transparent-256.png" alt="" width="72" height="72">
-          <span>Team photo coming soon</span>
-        </div>
-      </div>
-
-      <div class="team-copy">
-        <h2 id="team-title">Meet the Team</h2>
-        <!-- TODO: replace this filler copy with the real Meet the Team blurb -->
-        <p>Memorii Events brings photo booth entertainment, printed keepsakes and digital sharing to weddings, private parties and events across Toronto and the GTA.</p>
-        <p>Your guests get something to do on the night and a photo to take home. Our full story is coming soon.</p>
-        <div class="team-actions">
-          <a class="btn" href="pages/book.html">Book your Event</a>
-          <a class="btn btn-ghost" href="pages/quote.html">Get a Quote</a>
-        </div>
+  <!-- FAQ: the FAQ tab in the banner scrolls here -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="container faq-grid">
+      <h2 class="section-title" id="faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How far in advance should we book?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p>We recommend booking at least 3&ndash;6 months in advance for corporate events.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How much space does the booth need?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p>Our booth needs an 8x8 ft space with access to a power outlet.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you offer a post-event photo gallery?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p>Yes. Every package includes a private online gallery with every photo taken at your event. Your team can view, download, and share every image, with no watermarks and no expiry date.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How long do setup and teardown take?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p>We arrive 60&ndash;90 minutes before your event starts so everything is ready before the first guest arrives. Teardown takes about 30&ndash;45 minutes after the event ends.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is the photo booth suitable for outdoor corporate events?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p>Yes, for covered patios, tents, and sheltered outdoor spaces. We need protection from direct sunlight and rain, because our equipment is not weatherproof.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you have liability insurance?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p>Yes, Memorii Events carries full liability insurance. Insurance certificates can be provided on request for venues that need vendor documentation.</p>
+        </details>
       </div>
     </div>
   </section>
 </main>
+
+<!-- Booking popup, opened by the Events We Serve cards -->
+<dialog class="booking-dialog" id="booking-dialog" aria-labelledby="booking-title">
+  <div class="dialog-panel">
+    <button class="dialog-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <h2 id="booking-title">Book Your Booth For &ldquo;<span data-event-name>Your Event</span>&rdquo;</h2>
+    <p class="quote-line">Get a quote in 24 hours, no commitments.</p>
+
+    <!-- TODO: this form is not connected yet. When the new Formspree form is ready,
+         add action="https://formspree.io/f/NEW-ID" method="POST" to the form below
+         and remove the "not connected" handler in assets/js/main.js (section 6). -->
+    <form class="enquiry-form popup-form" data-not-connected>
+      <input type="hidden" name="_subject" value="New booking request - ">
+      <input type="hidden" name="event_type" value="">
+      <div class="visually-hidden" aria-hidden="true">
+        <label for="popup-gotcha">Leave this empty</label>
+        <input id="popup-gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
+
+      <div class="field">
+        <label for="popup-name">Full name <span class="req">(required)</span></label>
+        <input id="popup-name" name="name" type="text" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="popup-contact">Phone or email <span class="req">(required)</span></label>
+        <input id="popup-contact" name="contact" type="text" required>
+      </div>
+      <div class="form-row">
+          <div class="field">
+            <label for="popup-date">Date of event <span class="req">(required)</span></label>
+            <input id="popup-date" name="event_date" type="text" required inputmode="numeric" autocomplete="off"
+                   placeholder="yyyy-mm-dd" pattern="\d{4}-\d{2}-\d{2}" maxlength="10"
+                   data-date-field aria-describedby="popup-date-hint">
+            <span class="hint" id="popup-date-hint">Format yyyy-mm-dd, for example <span class="nowrap">2027-06-14</span>.</span>
+          </div>
+          <div class="field">
+            <label for="popup-budget">Budget <span class="req">(required)</span></label>
+            <select id="popup-budget" name="budget" required>
+                <option value="">Choose one</option>
+                <option>$349-$499</option>
+                <option>$500-$749</option>
+                <option>$750+</option>
+            </select>
+          </div>
+      </div>
+      <div class="form-row form-row--single">
+          <div class="field">
+            <label for="popup-collection">Chosen collection</label>
+            <select id="popup-collection" name="chosen_collection">
+                <option selected>Not sure</option>
+                <option>Essential Collection</option>
+                <option>Classic Collection</option>
+                <option>Reserve Collection</option>
+            </select>
+          </div>
+      </div>
+
+      <button class="btn btn-lg btn-block" type="submit" data-label="Reserve your date">Reserve your date</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</dialog>
 
 <footer class="site-footer">
   <div class="container">
@@ -149,19 +277,24 @@
       <div>
         <h2 class="footer-h">Follow us</h2>
         <ul class="footer-list">
-          <li><span class="label">Instagram</span>@memorii.events</li>
-          <li><span class="label">TikTok</span>@memoriievents</li>
+          <li><span class="label">Instagram</span><a href="https://www.instagram.com/memorii.events?utm_source=qr" target="_blank" rel="noopener">@memorii.events</a></li>
+          <li><span class="label">TikTok</span><a href="https://www.tiktok.com/@memoriievents?_r=1&amp;_t=ZS-98tOiBm9J1l" target="_blank" rel="noopener">@memoriievents</a></li>
+          <li><a href="https://maps.app.goo.gl/9qKDPne746rH4iwv8?g_st=ic" target="_blank" rel="noopener">Google Business Profile</a></li>
           <li><span class="label">Facebook</span>Memorii Events</li>
         </ul>
       </div>
     </div>
 
     <div class="footer-legal">
-      <p>&copy; 2026 Memorii Events. <a href="pages/privacy.html">Privacy Policy</a></p>
+      <p>&copy; 2026 Memorii Events.</p>
+      <ul class="footer-legal-links">
+        <li><a href="pages/privacy.html">Privacy Policy</a></li>
+        <li><a href="pages/terms.html">Terms and Conditions</a></li>
+      </ul>
     </div>
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=2" defer></script>
+<script src="assets/js/main.js?v=3" defer></script>
 </body>
 </html>

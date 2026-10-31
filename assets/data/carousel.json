@@ -136,14 +136,6 @@
     "height": 1067
   },
   {
-    "type": "video",
-    "src": "assets/media/vid4.mp4",
-    "alt": "Group of guests interacting with a photobooth at a wedding",
-    "poster": "assets/media-web/vid4-poster.jpg",
-    "width": 1080,
-    "height": 1920
-  },
-  {
     "type": "image",
     "src": "assets/media-web/wedding17.jpg",
     "alt": "Group of people at a wedding having fun using a photobooth",

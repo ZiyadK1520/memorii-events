@@ -10,7 +10,8 @@
         - arrows, keyboard arrows, swipe, pause button
         - only the current item and its two neighbours are loaded
    4. Reviews (reads assets/data/reviews.json and shows every review)
-   5. Forms (no past dates, stop double submits)
+   5. Forms (yyyy-mm-dd dates: real and not in the past; no double submits)
+   6. Booking popup (opened by the Events We Serve cards)
    ========================================================================== */
 (function () {
   'use strict';
@@ -28,6 +29,7 @@
   initCarousel();
   initReviews();
   initForms();
+  initBookingPopup();
 
   /* 2. Mobile menu -------------------------------------------------------- */
   function initNav() {
@@ -44,7 +46,7 @@
     toggle.addEventListener('click', function () {
       setOpen(!nav.classList.contains('is-open'));
     });
-    // Close after choosing a link (needed for the "About Us" jump link)
+    // Close after choosing a link (needed for the FAQ jump link)
     nav.addEventListener('click', function (e) {
       if (e.target.closest('a')) setOpen(false);
     });
@@ -449,21 +451,46 @@
   }
 
   /* 5. Forms -------------------------------------------------------------- */
+  // Returns a message if the date is wrong, or '' if it's fine.
+  // Dates are typed as yyyy-mm-dd, must exist on the calendar, and can't be in the past.
+  function dateProblem(value) {
+    if (!value) return '';   // "required" handles empty fields
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return 'Use the format yyyy-mm-dd, for example 2027-06-14.';
+    var y = Number(value.slice(0, 4));
+    var m = Number(value.slice(5, 7));
+    var d = Number(value.slice(8, 10));
+    var date = new Date(y, m - 1, d);
+    if (date.getFullYear() !== y || date.getMonth() !== m - 1 || date.getDate() !== d) {
+      return 'That date doesn’t exist. Check the month and day.';
+    }
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    if (date < today) return 'Choose a date that hasn’t passed yet.';
+    return '';
+  }
+
+  function checkDates(form) {
+    Array.prototype.forEach.call(form.querySelectorAll('[data-date-field]'), function (input) {
+      input.setCustomValidity(dateProblem(input.value.trim()));
+    });
+  }
+
   function initForms() {
     var forms = document.querySelectorAll('.enquiry-form');
     if (!forms.length) return;
 
-    // Event dates can't be in the past
-    var now = new Date();
-    var today = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
-
     Array.prototype.forEach.call(forms, function (form) {
-      var date = form.querySelector('input[type="date"]');
-      if (date) date.min = today;
+      var btn = form.querySelector('button[type="submit"]');
+
+      // Re-check the date as people type, and right before the browser validates
+      form.addEventListener('input', function (e) {
+        if (e.target.matches('[data-date-field]')) checkDates(form);
+      });
+      if (btn) btn.addEventListener('click', function () { checkDates(form); });
 
       // The browser checks required fields first; this only runs on a valid form
-      form.addEventListener('submit', function () {
-        var btn = form.querySelector('button[type="submit"]');
+      form.addEventListener('submit', function (e) {
+        if (form.hasAttribute('data-not-connected')) return;   // handled in section 6
         if (btn) {
           btn.disabled = true;
           btn.textContent = 'Sending…';
@@ -480,6 +507,67 @@
           btn.textContent = btn.getAttribute('data-label') || 'Send';
         }
       });
+    });
+  }
+
+  /* 6. Booking popup ------------------------------------------------------ */
+  function initBookingPopup() {
+    var dialog = $('#booking-dialog');
+    if (!dialog) return;
+
+    var form = $('form', dialog);
+    var nameEl = $('[data-event-name]', dialog);
+    var subject = form.querySelector('[name="_subject"]');
+    var typeField = form.querySelector('[name="event_type"]');
+    var status = $('.form-status', dialog);
+    var opener = null;
+
+    function open(eventName, button) {
+      opener = button;
+      nameEl.textContent = eventName;
+      subject.value = 'New booking request - ' + eventName;
+      typeField.value = eventName;
+      status.textContent = '';
+      if (typeof dialog.showModal === 'function') dialog.showModal();
+      else dialog.setAttribute('open', '');
+      document.body.classList.add('dialog-open');
+      var first = $('#popup-name', dialog);
+      if (first) first.focus();
+    }
+
+    function close() {
+      if (typeof dialog.close === 'function') dialog.close();
+      else { dialog.removeAttribute('open'); onClosed(); }
+    }
+
+    // Put focus back on the card that opened the popup
+    function onClosed() {
+      document.body.classList.remove('dialog-open');
+      if (opener) opener.focus();
+    }
+    dialog.addEventListener('close', onClosed);
+
+    Array.prototype.forEach.call(document.querySelectorAll('.event-open'), function (button) {
+      button.addEventListener('click', function () { open(button.getAttribute('data-event'), button); });
+    });
+
+    $('.dialog-close', dialog).addEventListener('click', close);
+
+    // A click on the dark backdrop lands on the <dialog> itself, outside the panel
+    dialog.addEventListener('click', function (e) {
+      if (e.target === dialog) close();
+    });
+
+    // Escape closes the popup (built into <dialog>; this covers older browsers)
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && dialog.hasAttribute('open')) close();
+    });
+
+    // TODO: the popup form is not connected yet. When the new Formspree form is ready,
+    // add its action to the <form> in index.html and delete this handler.
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      status.textContent = 'This form isn’t connected yet.';
     });
   }
 })();

@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
-  <link rel="stylesheet" href="../assets/css/styles.css?v=2">
+  <link rel="stylesheet" href="../assets/css/styles.css?v=3">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -47,7 +47,7 @@
       <a class="nav-link" href="book.html">Book your Event</a>
       <a class="nav-link" href="services.html">Services</a>
       <a class="nav-link" href="quote.html" aria-current="page">Get a Quote</a>
-      <a class="nav-link" href="../index.html#meet-the-team">About Us</a>
+      <a class="nav-link" href="../index.html#faq">FAQ</a>
     </nav>
   </div>
 </header>
@@ -57,12 +57,13 @@
     <div class="page-head">
       <h1>Get a Quote</h1>
       <p class="lead">Tell us about your event and we’ll reach out with pricing.</p>
+      <p class="quote-line">Get a quote in 24 hours, no commitments.</p>
     </div>
 
     <div class="form-layout">
       <div class="form-card">
         <form class="enquiry-form" action="https://formspree.io/f/mgaaaqll" method="POST">
-          <!-- Formspree settings -->
+          <!-- Formspree settings (endpoint to be replaced later) -->
           <input type="hidden" name="_subject" value="New quote request - Memorii Events">
           <input type="hidden" name="_next" value="https://ziyadk1520.github.io/memorii-events/pages/thanks.html">
           <!-- Spam trap: people never see or fill this -->
@@ -94,15 +95,33 @@
               </select>
             </div>
             <div class="field">
-              <label for="event_date">Event date <span class="req">(required)</span></label>
-              <input id="event_date" name="event_date" type="date" required>
-            </div>
+            <label for="chosen_collection">Chosen collection</label>
+            <select id="chosen_collection" name="chosen_collection">
+                <option selected>Not sure</option>
+                <option>Essential Collection</option>
+                <option>Classic Collection</option>
+                <option>Reserve Collection</option>
+            </select>
+          </div>
           </div>
 
-          <div class="field">
+          <div class="form-row">
+            <div class="field">
+            <label for="event_date">Date of event <span class="req">(required)</span></label>
+            <input id="event_date" name="event_date" type="text" required inputmode="numeric" autocomplete="off"
+                   placeholder="yyyy-mm-dd" pattern="\d{4}-\d{2}-\d{2}" maxlength="10"
+                   data-date-field aria-describedby="event_date-hint">
+            <span class="hint" id="event_date-hint">Format yyyy-mm-dd, for example <span class="nowrap">2027-06-14</span>.</span>
+          </div>
+            <div class="field">
             <label for="budget">Budget <span class="req">(required)</span></label>
-            <input id="budget" name="budget" type="text" required aria-describedby="budget-hint">
-            <span class="hint" id="budget-hint">A rough number is fine. You can also write &ldquo;not sure yet&rdquo;.</span>
+            <select id="budget" name="budget" required>
+                <option value="">Choose one</option>
+                <option>$349-$499</option>
+                <option>$500-$749</option>
+                <option>$750+</option>
+            </select>
+          </div>
           </div>
 
           <div class="field">
@@ -112,7 +131,7 @@
           </div>
 
           <div class="form-foot">
-            <p class="form-note">By sending this form you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+            <p class="form-note">By sending this form you agree to our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms and Conditions</a>.</p>
             <button class="btn btn-lg" type="submit" data-label="Request a quote">Request a quote</button>
           </div>
         </form>
@@ -121,7 +140,8 @@
       <aside class="aside-card" aria-labelledby="quote-next">
         <h2 id="quote-next">What happens next</h2>
         <p>We read every request and reach out by phone or email with pricing.</p>
-        <p>Questions first? Email <a href="mailto:memoriieventsbooking@gmail.com">memoriieventsbooking@gmail.com</a>.</p>
+        <p>Want to compare packages first? See our <a href="services.html">collections and pricing</a>.</p>
+        <p>Questions? Email <a href="mailto:memoriieventsbooking@gmail.com">memoriieventsbooking@gmail.com</a>.</p>
       </aside>
     </div>
   </div>
@@ -150,19 +170,24 @@
       <div>
         <h2 class="footer-h">Follow us</h2>
         <ul class="footer-list">
-          <li><span class="label">Instagram</span>@memorii.events</li>
-          <li><span class="label">TikTok</span>@memoriievents</li>
+          <li><span class="label">Instagram</span><a href="https://www.instagram.com/memorii.events?utm_source=qr" target="_blank" rel="noopener">@memorii.events</a></li>
+          <li><span class="label">TikTok</span><a href="https://www.tiktok.com/@memoriievents?_r=1&amp;_t=ZS-98tOiBm9J1l" target="_blank" rel="noopener">@memoriievents</a></li>
+          <li><a href="https://maps.app.goo.gl/9qKDPne746rH4iwv8?g_st=ic" target="_blank" rel="noopener">Google Business Profile</a></li>
           <li><span class="label">Facebook</span>Memorii Events</li>
         </ul>
       </div>
     </div>
 
     <div class="footer-legal">
-      <p>&copy; 2026 Memorii Events. <a href="privacy.html">Privacy Policy</a></p>
+      <p>&copy; 2026 Memorii Events.</p>
+      <ul class="footer-legal-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms and Conditions</a></li>
+      </ul>
     </div>
   </div>
 </footer>
 
-<script src="../assets/js/main.js?v=2" defer></script>
+<script src="../assets/js/main.js?v=3" defer></script>
 </body>
 </html>
