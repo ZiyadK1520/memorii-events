@@ -467,8 +467,8 @@ a:hover { color: var(--grey); }
 .event-card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
 .event-card:focus-within { border-color: var(--grey); }
 
-/* Placeholder colour blocks until event photos are ready */
-.event-block { aspect-ratio: 16 / 7; }
+/* Event photos (the colour shows while the photo loads) */
+.event-block { aspect-ratio: 16 / 7; width: 100%; height: auto; object-fit: cover; }
 @media (min-width: 640px) { .event-block { aspect-ratio: 16 / 10; } }
 .event-block--slate { background: var(--slate); }
 .event-block--magenta { background: var(--magenta); }

@@ -1,237 +1,65 @@
 [
   {
     "type": "image",
-    "src": "assets/media-web/wedding1.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding2.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding3.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding4.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth",
+    "src": "assets/media-web/ep25.jpg",
+    "alt": "Big group of wedding guests squeezing into one photo booth shot",
     "width": 1600,
     "height": 1067
   },
   {
     "type": "video",
-    "src": "assets/media/vid1.mp4",
-    "alt": "Group of people interacting with a photobooth at a wedding",
-    "poster": "assets/media-web/vid1-poster.jpg",
-    "width": 1080,
-    "height": 782
+    "src": "assets/media/gif2.mp4",
+    "alt": "Short clip of guests posing at the wedding photo booth",
+    "poster": "assets/media-web/gif2-poster.jpg",
+    "width": 1280,
+    "height": 720
   },
   {
     "type": "image",
-    "src": "assets/media-web/wedding5.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth",
+    "src": "assets/media-web/ep43.jpg",
+    "alt": "Photo booth and printer set up at a wedding reception venue",
+    "width": 1200,
+    "height": 1600
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep34.jpg",
+    "alt": "Family with kids in props and novelty glasses at the wedding photo booth",
     "width": 1600,
     "height": 1067
   },
   {
     "type": "image",
-    "src": "assets/media-web/wedding6.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth",
+    "src": "assets/media-web/ep7.jpg",
+    "alt": "Five guests posing side by side at the photo booth",
     "width": 1600,
     "height": 1067
   },
   {
     "type": "image",
-    "src": "assets/media-web/wedding7.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth",
+    "src": "assets/media-web/ep36.jpg",
+    "alt": "Three guests posing with peace signs at the wedding photo booth",
     "width": 1600,
     "height": 1067
   },
   {
     "type": "image",
-    "src": "assets/media-web/wedding8.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "video",
-    "src": "assets/media/vid2.mp4",
-    "alt": "Group of guests interacting with a photobooth at a wedding",
-    "poster": "assets/media-web/vid2-poster.jpg",
-    "width": 1080,
-    "height": 1920
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding9.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth",
+    "src": "assets/media-web/ep2.jpg",
+    "alt": "Man kissing a baby's cheek while a woman holds her at the photo booth",
     "width": 1600,
     "height": 1067
   },
   {
     "type": "image",
-    "src": "assets/media-web/wedding10.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth",
+    "src": "assets/media-web/ep5.jpg",
+    "alt": "Group of guests striking playful poses at the photo booth",
     "width": 1600,
     "height": 1067
   },
   {
     "type": "image",
-    "src": "assets/media-web/wedding11.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding12.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "video",
-    "src": "assets/media/vid3.mp4",
-    "alt": "Group of people interacting with a photobooth at a wedding",
-    "poster": "assets/media-web/vid3-poster.jpg",
-    "width": 1080,
-    "height": 1920
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding13.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding14.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding15.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding16.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding17.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding18.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding19.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding20.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "video",
-    "src": "assets/media/vid5.mp4",
-    "alt": "Group of people interacting with a photobooth at a wedding",
-    "poster": "assets/media-web/vid5-poster.jpg",
-    "width": 1080,
-    "height": 1920
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding21.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding22.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding23.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding24.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "video",
-    "src": "assets/media/vid6.mp4",
-    "alt": "Group of guests interacting with a photobooth at a wedding",
-    "poster": "assets/media-web/vid6-poster.jpg",
-    "width": 1080,
-    "height": 1920
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding25.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding26.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding27.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth",
-    "width": 1600,
-    "height": 1067
-  },
-  {
-    "type": "image",
-    "src": "assets/media-web/wedding28.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth",
+    "src": "assets/media-web/ep9.jpg",
+    "alt": "Woman kissing an older man on the cheek at the photo booth",
     "width": 1600,
     "height": 1067
   },
@@ -245,29 +73,324 @@
   },
   {
     "type": "image",
-    "src": "assets/media-web/wedding29.jpg",
-    "alt": "Group of people at a wedding having fun using a photobooth",
+    "src": "assets/media-web/ep27.jpg",
+    "alt": "Wedding guests posing playfully with novelty glasses",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "video",
+    "src": "assets/media/gif1.mp4",
+    "alt": "Short clip of guests posing at the wedding photo booth",
+    "poster": "assets/media-web/gif1-poster.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep10.jpg",
+    "alt": "Three women posing together at the photo booth",
     "width": 1600,
     "height": 1067
   },
   {
     "type": "image",
-    "src": "assets/media-web/wedding30.jpg",
-    "alt": "Group of people at a wedding posing together in a photobooth",
+    "src": "assets/media-web/ep35.jpg",
+    "alt": "Family with kids wearing a hat prop at the wedding photo booth",
     "width": 1600,
     "height": 1067
   },
   {
     "type": "image",
-    "src": "assets/media-web/wedding31.jpg",
-    "alt": "Group of guests at a wedding having a great time using a photobooth",
+    "src": "assets/media-web/ep45.jpg",
+    "alt": "Memorii Events photo booth with a ring light, ready for guests",
+    "width": 900,
+    "height": 1600
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep31.jpg",
+    "alt": "Three women sharing a kiss on the cheek at the wedding photo booth",
     "width": 1600,
     "height": 1067
   },
   {
     "type": "image",
-    "src": "assets/media-web/wedding32.jpg",
-    "alt": "Group of people at a wedding laughing while using a photobooth",
+    "src": "assets/media-web/ep20.jpg",
+    "alt": "Couple posing closely at the wedding photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "video",
+    "src": "assets/media/vid5.mp4",
+    "alt": "Group of people interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid5-poster.jpg",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep38.jpg",
+    "alt": "Group of wedding guests posing together at the photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep6.jpg",
+    "alt": "Guests holding a woman in a white dress across their arms at the photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep40.jpg",
+    "alt": "Three guests posing playfully at the wedding photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "video",
+    "src": "assets/media/vid3.mp4",
+    "alt": "Group of people interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid3-poster.jpg",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep8.jpg",
+    "alt": "Five guests laughing and posing playfully at the photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep11.jpg",
+    "alt": "Family group with props and novelty glasses at the photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "video",
+    "src": "assets/media/vid2.mp4",
+    "alt": "Group of guests interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid2-poster.jpg",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep13.jpg",
+    "alt": "Couple at a wedding photo booth with novelty glasses and a BOOM sign",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep33.jpg",
+    "alt": "Family group smiling together at the wedding photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep30.jpg",
+    "alt": "Guest wearing a giant taco hat at the wedding photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep41.jpg",
+    "alt": "Three women striking poses at the wedding photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep29.jpg",
+    "alt": "Wedding guests crowding in with novelty glasses at the photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep17.jpg",
+    "alt": "Wedding guests with a child holding a BOOM sign and a giant hat prop",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "video",
+    "src": "assets/media/vid1.mp4",
+    "alt": "Group of people interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid1-poster.jpg",
+    "width": 1080,
+    "height": 782
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep18.jpg",
+    "alt": "Couple posing together at the wedding photo booth with a peace sign",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep22.jpg",
+    "alt": "Wedding guests with a top hat and novelty glasses at the photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep26.jpg",
+    "alt": "Wedding guests posing with novelty glasses and a BOOM sign",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep14.jpg",
+    "alt": "Four wedding guests posing with novelty glasses at the photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "video",
+    "src": "assets/media/vid6.mp4",
+    "alt": "Group of guests interacting with a photobooth at a wedding",
+    "poster": "assets/media-web/vid6-poster.jpg",
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep42.jpg",
+    "alt": "Memorii Events photo booth set up with a ring light and a props table",
+    "width": 740,
+    "height": 1600
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep1.jpg",
+    "alt": "Four friends posing with novelty glasses in front of a gold geometric photo booth backdrop",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep4.jpg",
+    "alt": "Large group of guests smiling together at the photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep15.jpg",
+    "alt": "Four wedding guests in formal wear posing at the photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep19.jpg",
+    "alt": "Group of wedding guests making heart hands with novelty glasses",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep28.jpg",
+    "alt": "Two women posing together at the wedding photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "video",
+    "src": "assets/media/gif3.mp4",
+    "alt": "Short clip of guests posing at the wedding photo booth",
+    "poster": "assets/media-web/gif3-poster.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep39.jpg",
+    "alt": "Group of wedding guests leaning in for a photo at the photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep3.jpg",
+    "alt": "Couple posing together at the photo booth in front of a gold geometric backdrop",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep37.jpg",
+    "alt": "Couple sharing a kiss at the wedding photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep23.jpg",
+    "alt": "Large family group posing at the wedding photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep44.jpg",
+    "alt": "Photo booth station set up beside the wedding backdrop",
+    "width": 1200,
+    "height": 1600
+  },
+  {
+    "type": "video",
+    "src": "assets/media/gif4.mp4",
+    "alt": "Short clip of guests posing at the wedding photo booth",
+    "poster": "assets/media-web/gif4-poster.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep24.jpg",
+    "alt": "Three guests posing at the wedding photo booth, one in a top hat",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep21.jpg",
+    "alt": "Wedding guests laughing with novelty glasses and a crown prop",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep16.jpg",
+    "alt": "Man lifting a woman in his arms at the wedding photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep32.jpg",
+    "alt": "Family with a young boy posing at the wedding photo booth",
+    "width": 1600,
+    "height": 1067
+  },
+  {
+    "type": "image",
+    "src": "assets/media-web/ep12.jpg",
+    "alt": "Family with kids posing together at the photo booth",
     "width": 1600,
     "height": 1067
   }
