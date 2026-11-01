@@ -756,6 +756,58 @@ body.dialog-open { overflow: hidden; }
 /* 10. Reduced motion -------------------------------------------------------- */
 /* People who ask their device for less motion get no carousel animation.
    The slideshow timing still works. */
+/* Thank-you page ------------------------------------------------------------ */
+.thanks { display: grid; gap: 56px; align-items: center; }
+@media (min-width: 900px) { .thanks { grid-template-columns: minmax(0, 1fr) 280px; gap: 80px; } }
+.thanks-copy { max-width: 38rem; }
+.thanks-check {
+  display: grid; place-items: center;
+  width: 56px; height: 56px; margin-bottom: 24px; border-radius: 50%;
+  background: var(--magenta); color: var(--white);
+  box-shadow: 0 0 0 8px rgba(157, 10, 91, 0.18);
+}
+.thanks-check svg { width: 28px; height: 28px; }
+.thanks-eyebrow {
+  margin-bottom: 12px; color: var(--grey);
+  font-size: var(--fs-small); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.thanks h1 { font-size: var(--fs-h1); margin-bottom: 16px; }
+.thanks-steps { list-style: none; margin: 32px 0 0; padding: 0; display: grid; gap: 12px; counter-reset: step; }
+.thanks-steps li {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 16px 20px; border: 1px solid var(--line); border-radius: var(--radius-md);
+  background: var(--surface); counter-increment: step;
+}
+.thanks-steps li::before {
+  content: counter(step);
+  display: grid; place-items: center; flex: 0 0 32px; height: 32px; border-radius: 50%;
+  background: var(--surface-strong); border: 1px solid var(--line-strong);
+  font-weight: 700; font-size: 0.9375rem;
+}
+.thanks-steps strong { display: block; margin-bottom: 2px; }
+.thanks-steps p { color: var(--grey); font-size: 0.9375rem; }
+.thanks-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.thanks-social { margin-top: 20px; color: var(--grey); font-size: var(--fs-small); }
+
+/* Photo strip, like a 2x6 print from the booth */
+.photo-strip {
+  width: min(240px, 66vw); margin: 0 auto; padding: 12px 12px 0;
+  background: #f7f4ef; border-radius: 6px;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  transform: rotate(3deg);
+}
+.photo-strip img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; margin-bottom: 10px; border-radius: 2px; }
+.photo-strip figcaption { padding: 4px 0 14px; text-align: center; color: #1d1d1d; font-size: 0.875rem; line-height: 1.3; letter-spacing: -0.01em; }
+.photo-strip figcaption strong { display: block; font-weight: 300; color: #8a8a8a; }
+.photo-strip figcaption span { display: block; font-weight: 700; }
+@media (prefers-reduced-motion: no-preference) {
+  .photo-strip { animation: strip-in 0.8s var(--ease) both; }
+}
+@keyframes strip-in {
+  from { opacity: 0; transform: translateY(28px) rotate(0deg); }
+  to   { opacity: 1; transform: translateY(0) rotate(3deg); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after {

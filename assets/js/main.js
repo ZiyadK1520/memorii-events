@@ -10,7 +10,8 @@
         - arrows, keyboard arrows, swipe, pause button
         - only the current item and its two neighbours are loaded
    4. Reviews (reads assets/data/reviews.json and shows every review)
-   5. Forms (yyyy-mm-dd dates: real and not in the past; no double submits)
+   5. Forms (yyyy-mm-dd dates: real and not in the past; no double submits;
+        sent in the background, then on to our thank-you page)
    6. Booking popup (opened by the Events We Serve cards)
    ========================================================================== */
 (function () {
@@ -488,12 +489,35 @@
       });
       if (btn) btn.addEventListener('click', function () { checkDates(form); });
 
-      // The browser checks required fields first; this only runs on a valid form
+      // The browser checks required fields first; this only runs on a valid form.
+      // The form is sent to Formspree in the background, then the visitor goes to
+      // our own thank-you page (Formspree's own page never shows).
       form.addEventListener('submit', function (e) {
-        if (btn) {
-          btn.disabled = true;
-          btn.textContent = 'Sending…';
+        if (!window.fetch || !window.FormData) {   // very old browsers: plain send
+          if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+          return;
         }
+        e.preventDefault();
+        if (form.getAttribute('data-sending')) return;   // no double submits
+        form.setAttribute('data-sending', '1');
+        var status = formStatus(form);
+        status.textContent = '';
+        if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        })
+          .then(function (r) {
+            if (!r.ok) throw new Error(r.status);
+            window.location.href = form.getAttribute('data-thanks') || 'thanks.html';
+          })
+          .catch(function () {
+            form.removeAttribute('data-sending');
+            if (btn) { btn.disabled = false; btn.textContent = btn.getAttribute('data-label') || 'Send'; }
+            status.textContent = 'That didn’t send. Check your connection and try again, or email memoriieventsbooking@gmail.com.';
+          });
       });
     });
 
@@ -501,12 +525,26 @@
     window.addEventListener('pageshow', function () {
       Array.prototype.forEach.call(forms, function (form) {
         var btn = form.querySelector('button[type="submit"]');
+        form.removeAttribute('data-sending');
         if (btn && btn.disabled) {
           btn.disabled = false;
           btn.textContent = btn.getAttribute('data-label') || 'Send';
         }
       });
     });
+  }
+
+  // The message line under a form (the Book and Quote pages get one added when needed)
+  function formStatus(form) {
+    var el = form.querySelector('.form-status');
+    if (!el) {
+      el = document.createElement('p');
+      el.className = 'form-status';
+      el.setAttribute('role', 'status');
+      el.setAttribute('aria-live', 'polite');
+      form.appendChild(el);
+    }
+    return el;
   }
 
   /* 6. Booking popup ------------------------------------------------------ */
