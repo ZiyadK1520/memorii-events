@@ -490,7 +490,6 @@
 
       // The browser checks required fields first; this only runs on a valid form
       form.addEventListener('submit', function (e) {
-        if (form.hasAttribute('data-not-connected')) return;   // handled in section 6
         if (btn) {
           btn.disabled = true;
           btn.textContent = 'Sending…';
@@ -561,13 +560,6 @@
     // Escape closes the popup (built into <dialog>; this covers older browsers)
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && dialog.hasAttribute('open')) close();
-    });
-
-    // TODO: the popup form is not connected yet. When the new Formspree form is ready,
-    // add its action to the <form> in index.html and delete this handler.
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      status.textContent = 'This form isn’t connected yet.';
     });
   }
 })();
