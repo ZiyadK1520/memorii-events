@@ -467,9 +467,13 @@ a:hover { color: var(--grey); }
 .event-card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
 .event-card:focus-within { border-color: var(--grey); }
 
-/* Event photos (the colour shows while the photo loads) */
-.event-block { aspect-ratio: 16 / 7; width: 100%; height: auto; object-fit: cover; }
-@media (min-width: 640px) { .event-block { aspect-ratio: 16 / 10; } }
+/* Event photos: the 3:2 frame matches the photos, so nothing is stretched or cut off.
+   The colour shows while the photo loads. */
+.event-block {
+  display: block; width: 100%; height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover; object-position: center 30%;
+}
 .event-block--slate { background: var(--slate); }
 .event-block--magenta { background: var(--magenta); }
 .event-block--deep { background: var(--magenta-deep); }
@@ -707,6 +711,20 @@ body.dialog-open { overflow: hidden; }
   font-size: 0.8125rem; font-weight: 600;
 }
 .plan-card:not(.plan-card--featured) .plan-badge { background: var(--slate); }
+/* Collection photos: full width across the top of each card, same shape on every card.
+   Portrait photos are cropped (never stretched); the modifiers pick what stays in frame. */
+.plan-photo {
+  display: block;
+  width: calc(100% + 52px); max-width: none; height: auto;
+  margin: -30px -26px 0;            /* cancels the card padding so the photo reaches the edges */
+  aspect-ratio: 16 / 10;             /* stacked cards (phone, tablet): wider so the photo isn't too tall */
+  object-fit: cover; object-position: center 40%;
+  border-radius: calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0;
+  background: var(--surface-strong);
+}
+@media (min-width: 1000px) { .plan-photo { aspect-ratio: 4 / 3; } }  /* three columns side by side */
+.plan-photo--booth { object-position: center 58%; }
+.plan-photo--setup { object-position: center 70%; }
 /* Keeps card headings level when a card has no badge (desktop only) */
 .plan-badge--spacer { display: none; }
 @media (min-width: 1000px) { .plan-badge--spacer { display: block; visibility: hidden; } }
